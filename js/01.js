@@ -27,5 +27,31 @@
     // As in other languages, we use the type string to refer to these textual datatypes. Just like JavaScript, TypeScript also uses double quotes (") or single quotes (') to surround string data.
     var myName = 'yly';
     var myAge = 25;
+    // ES6
     var sentence = "My name is " + myName + ". I'm " + myAge + " years old.";
+})()(function () {
+    // Void
+    // Javascript 中没有空值（Void）的概念，在 Typescript 中，可以用 Void 表示没有任何返回值的函数
+    function alertName() {
+        alert('My name is yly.');
+    }
+    // 声明一个 void 类型的变量没有什么用，因为你只能将它赋值为 undefined 和 null
+    var unusable = undefined;
+})()(function () {
+    // Null and Undefined
+    // 在 TypeScript 中，可以使用 null 和 undefined 来定义这两个原始数据类型
+    // undefined 类型的变量只能被赋值为 undefined，null 类型的变量只能被赋值为 null
+    var u = undefined;
+    var n = null;
+    // 与 void 的区别
+    // undefined 和 null 是所有类型的子类型
+    // 也就是说 undefined 类型的变量，可以赋值给比如说 number 类型的变量
+    var num = undefined;
+    // or
+    var u2;
+    var num2 = u2; // ⭕
+    // void 类型的变量不能赋值给 number 类型的变量
+    var v;
+    // let num3: number = v; // ❌
+    // Type 'void' is not assignable to type 'number'
 })();
