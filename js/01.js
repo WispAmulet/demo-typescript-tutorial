@@ -1,6 +1,6 @@
 // 原始数据类型
 // Primitive data types: Boolean, Number, String, Null, Undefined and Symbol
-(function () {
+{
     // Boolean
     // The most basic datatype is the simple true/false value, which JavaScript and TypeScript call a boolean value.
     var isDone = true; // ⭕
@@ -11,7 +11,8 @@
     // 直接调用 Boolean() 会把任意类型的值转为 boolean 类型
     var createdByBoolean = Boolean(1); // ⭕
     // new Number() 和 Number()，new String() 和 String() 同上
-})()(function () {
+}
+{
     // Number
     // As in JavaScript, all numbers in TypeScript are floating point values. These floating point numbers get the type number. In addition to hexadecimal and decimal literals, TypeScript also supports binary and octal literals introduced in ECMAScript 2015.
     var decimal = 6;
@@ -22,14 +23,16 @@
     var octal = 484;
     var notANumber = NaN;
     var infinity = Infinity;
-})()(function () {
+}
+{
     // String
     // As in other languages, we use the type string to refer to these textual datatypes. Just like JavaScript, TypeScript also uses double quotes (") or single quotes (') to surround string data.
     var myName = 'yly';
     var myAge = 25;
     // ES6
     var sentence = "My name is " + myName + ". I'm " + myAge + " years old.";
-})()(function () {
+}
+{
     // Void
     // Javascript 中没有空值（Void）的概念，在 Typescript 中，可以用 Void 表示没有任何返回值的函数
     function alertName() {
@@ -37,7 +40,8 @@
     }
     // 声明一个 void 类型的变量没有什么用，因为你只能将它赋值为 undefined 和 null
     var unusable = undefined;
-})()(function () {
+}
+{
     // Null and Undefined
     // 在 TypeScript 中，可以使用 null 和 undefined 来定义这两个原始数据类型
     // undefined 类型的变量只能被赋值为 undefined，null 类型的变量只能被赋值为 null
@@ -48,10 +52,10 @@
     // 也就是说 undefined 类型的变量，可以赋值给比如说 number 类型的变量
     var num = undefined;
     // or
-    var u2;
+    var u2 = void 0;
     var num2 = u2; // ⭕
     // void 类型的变量不能赋值给 number 类型的变量
-    var v;
+    var v = void 0;
     // let num3: number = v; // ❌
     // Type 'void' is not assignable to type 'number'
-})();
+}
