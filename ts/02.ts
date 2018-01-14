@@ -1,7 +1,7 @@
 // 任意值
 // 任意值（Any）用来表示允许赋值为任意类型
 
-(function (): any {
+{
   // 对于普通类型，在赋值过程中改变类型是不被允许的
   let num: string = 'seven';
   // num = 7; // ❌
@@ -26,4 +26,4 @@
   something = 'seven';
   something = 7;
   something.setName('yly');
-})()
+}
