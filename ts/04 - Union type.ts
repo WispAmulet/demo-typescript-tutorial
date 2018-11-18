@@ -1,5 +1,5 @@
 // 联合类型
-// 联合类型（Union Types）表示取值可以为多种类型中的一种
+// 联合类型（Union Type）表示取值可以为多种类型中的一种
 
 {
   let num: number | string;

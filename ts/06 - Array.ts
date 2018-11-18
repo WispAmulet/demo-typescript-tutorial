@@ -38,6 +38,7 @@
 }
 
 {
+  // 类数组 (Array-like Object)
   function sum(): any {
     let args: number[] = arguments; // ❌
     // Type 'IArguments' is not assignable to type 'number[]'
